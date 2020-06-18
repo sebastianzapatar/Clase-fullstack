@@ -1,0 +1,182 @@
+body {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+}
+#header {
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background: white;
+    border-top: 3px solid #61dafb;
+}
+#logo{
+    width: 30%;
+    font-size: 30px;
+    float: left;
+}
+#logo img{
+    display: block;
+    float: left;
+    height: 60px;
+    animation: girar infinite 10s linear;
+}
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+       
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#marca{
+    display: block;
+    margin: 0px;
+    float: left;
+}
+.center{
+    width: 75%;
+    margin: 0px auto;
+}
+#menu ul{
+    line-height: 65px;
+    float: right;
+    width: 60%;
+    clear: both;
+}
+#menu ul li{
+    display: inline-block;
+    list-style: none;
+    height: 46px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#menu a{
+    text-decoration: none;
+    color: black;
+}
+#menu a:hover{
+    text-decoration: none;
+    color: rgb(31, 58, 207);
+    transition: 300ms;
+}
+/*Con esto accedemos al div con el id slide */
+#slider{
+    background: #61dafb;
+    width: 100%;
+    height: 350px;
+    line-height: 320px;
+    text-shadow: 0px 0px 5px #4444;
+    color: black;
+}
+#slider h2{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.btn{
+    
+    background: black;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    max-width: 100px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+.btn a{
+    text-decoration: none;
+}
+.btn-success{
+    background: gray;
+    transition: 300ms;
+}
+.btn-success:hover{
+    background: black;
+    transition: 300ms;
+}
+input[type="text"],textarea{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 5px;
+    max-width: 150px;
+}
+textarea{
+    width: 100%;
+    max-width: 100;
+    height: 150px;
+}
+.full-form{
+   width: 90%; 
+    margin: 0px auto;
+}
+.full-form label{
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.radio-button{
+    margin-top: 15px;
+    float: center;
+    margin-bottom: 20px;
+}
+.article-item{
+    width: 100%;
+    border-bottom: 20px;
+    padding-top: 20px;
+    text-align: left;
+}
+.article-item .image-wrap{
+    width:130px;
+    height: 130px;
+    overflow: hidden;
+    border:1px solid #ccc;
+}
+.article-item .image-wrap img{
+    height: 100%;
+    text-align: center;
+}
+.article-item h2{
+    display: block;
+    width: 100%;
+    padding:0px;
+    margin:0px ;
+}
+.article-item .date{
+    display: block;
+    width: 100%;
+    color: rgb(31, 58, 207);
+}
+.article-item a{
+    display: block;
+    text-decoration: none;
+    color:#444;
+    
+}
+.article-item a:hover{
+    text-decoration: underline;
+}
+/* Responsive */
+
+/* desde el ancho 0px hasta el ancho 1488px */
+@media(max-width:1100px ){
+    /*Se ejecura el estilo*/
+    .center{
+        width: 50%;
+    }
+    #slider h2{
+        margin: 0px;
+        padding: 0px;
+        text-align: none;
+    }
+}

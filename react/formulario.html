@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            Mi primer maquetado
+        </title>
+        <!--Hoja de estilos-->
+        <link rel = "stylesheet" type="text/css"href="assets/css/style.css" /> 
+        
+    </head>
+    <body>
+        <header id="header">
+            
+            <div class="center">
+                <!--La parte del logo va acá-->
+               
+                <!--Menu de navegación-->
+                <div id="menu">
+                    <nav id="menu"><!--Poner los links que nos redirigen a otra página-->
+                        <ul>
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="formulario.html">Formulario</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div id="logo">
+                <img src="img/download.png" class="app-logo" alt="Logo del proyecto" /><br/>
+                <span id="marca">
+                    <strong>Clase fullstack</strong>
+               </span>
+               
+
+            </div>
+        </header>
+        <div id="slider" class="slider-big">
+            <h2>Hacer un formulario </h2>
+        </div>
+        <div class="center">
+            <section id="content">
+                <h1 class="subheader">
+                    Formulario
+                </h1>
+                <form class="full-form" method="POST"> 
+                    <div class="form-group">
+                        <label for="nombre">nombre</label>
+                        <input type="text" name="nombre" />
+                    </div>
+                    <div class="form-group">
+                        <label for="apellidos">apellidos</label>
+                        <input type="text" name="apellido" />
+                    </div>
+                    <div class="form-group">
+                        <label for="biografia">biografía</label>
+                        <textarea name="biografia" ></textarea>
+                    </div>
+                    <div class="form-group radio-button">
+                       <input type="radio" name="genero" value="hombre"/>Hombre
+                       <input type="radio" name="genero" value="mujer"/>Mujer
+                       <input type="radio" name="genero" value="otro"/>Otro
+                    </div>
+                    <input type="submit" value="enviar" class="btn btn-success">
+                </form>
+            </section>
+        </div>
+    </body>
+    <script type="text/javascript">
+       
+            
+    </script>
+</html>

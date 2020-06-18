@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>
+            Mi primer maquetado
+        </title>
+        <!--Hoja de estilos-->
+        <link rel = "stylesheet" type="text/css"href="assets/css/style.css" /> 
+        
+    </head>
+    <body>
+        <header id="header">
+            
+            <div class="center">
+                <!--La parte del logo va acá-->
+               
+                <!--Menu de navegación-->
+                <div id="menu">
+                    <nav id="menu"><!--Poner los links que nos redirigen a otra página-->
+                        <ul>
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="formulario.html">Formulario</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div id="logo">
+                <img src="img/download.png" class="app-logo" alt="Logo del proyecto" /><br/>
+                <span id="marca">
+                    <strong>Clase fullstack</strong>
+               </span>
+               
+
+            </div>
+        </header>
+        <div id="slider" class="slider">
+            <h2>Seguimos en nuestro curso de fullstack, seguimos en una breve de vue.js </h2>
+        </div>
+        
+        <div class="center" id="articles">
+            <section id="content">
+                <h1>Listar Artículos</h1>
+                <article class="article-item" id="article-template">
+                    <div class="image-wrap">
+                        <img src="img/download.png" alt="Meme"/>
+                    </div>
+                    <h2>Artículo de prueba</h2>
+                    <span class="date">Hace 5 min</span>
+                    <a href="#">Leer más</a>
+                </article>
+                <!--Añadir artículos vía JS-->
+            </section>
+            
+        </div>
+    </body>
+    <script type="text/javascript">
+        var template=document.getElementById("article-template");
+        
+        var articles=document.getElementById("articles");
+        for(var i=0;i<5;i++){
+            var clone=template.cloneNode(true);
+            clone.removeAttribute("id");
+            articles.appendChild(clone);
+        }
+            
+    </script>
+</html>
